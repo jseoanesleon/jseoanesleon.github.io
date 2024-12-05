@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Terreneitor</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 </head>
+
 <body>
 
     <!-- inicio encabezado-->
@@ -18,22 +19,191 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="mailto:info@prodart.com">info@prodart.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 057-320-202-02-02">057-320-202-02-02</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="tel: 057-320-202-02-02">057-320-202-02-02</a>
                 </div>
                 <div>
-                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                 </div>
             </div>
 
         </div>
     </nav>
-    <!-- fin encabezado-->
-  
-    <section style="height: 500px;"></section>
+    <!-- fin de encabezado -->
+
+    <!-- inicio menu-->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                ProdArt
+            </a>
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+                id="opciones">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercade.html">A cerca de </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">Compras </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- fin menu-->
+
+    <!-- cuerpo-->
+    <section class="bg-light">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img id="mainImage" class="card-img img-fluid" src="assets/img/Terreneitor.jpg" style="height: 300px;">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                        </div>
+    
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <!-- Miniaturas con funcionalidad para cambiar la imagen principal -->
+                                        <div class="col-4">
+                                            <a href="#" onclick="changeImage('assets/img/terreneitor 2.jpg')">
+                                                <img class="card-img img-fluid" src="assets/img/terreneitor 2.jpg" style="height: 107px;">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" onclick="changeImage('assets/img/terreneitor 3.jpg')">
+                                                <img class="card-img img-fluid" src="assets/img/terreneitor 3.jpg" style="height: 107px;">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" onclick="changeImage('assets/img/terreneitor 4.jpg')">
+                                                <img class="card-img img-fluid" src="assets/img/terreneitor 4.jpg" style="height: 107px;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Terreneitor: El Rey Con Sus TurboMotores!!!</h1>
+                            <p class="h3 py-2">$156.370</p>
+                            <p class="py-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="text-warning fas fa-star-half-alt"></i>
+                                <span class="list-inline-item text-dark">Rating 4.8 | 40 Comentarios</span>
+                            </p>
+    
+                            <h6><b>Descripción:</b></h6>
+                            <p>El mejor regalo para niños: con función anticolisión y anticaída. ¡Puede salir a jugar con su hijo, estimular la naturaleza lúdica del niño y darle la mejor compañía!</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6><b>Color : </b></h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Negro / Azul</strong></p>
+                                </li>
+                            </ul>
+    
+                            <h6><b>Especificacion:</b></h6>
+                            <ul class="list-unstyled pb-3">
+                                <li>
+                                    Fabricante: Genérica
+                                    <br>
+                                    Modelo: Remote control car, Toy car
+                                    <br>
+                                    Versión: Controle Remoto
+                                    <br>
+                                    Velocidad máxima: 15 km/h
+                                    <br>
+                                    Incluye pilas: Sí
+                                    <br>
+                                    Tipo de pilas del control remoto: AAA
+                                    <br>
+                                    Edad recomendada: 12 años o más
+                                </li>
+                            </ul>
+    
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item text-right">
+                                                Cantidad
+                                                <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                            <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
+                                    </div>
+                                </div>
+                            </form>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Función para cambiar la imagen principal
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+        }
+    </script>    
+
+    <!-- fin cuerpo-->
 
     <!-- inicio de pie-->
     <footer class="bg-dark" id="templatemo_footer">
@@ -48,11 +218,11 @@
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 057-320-202-02-02">057-320-202-02-02</a>
+                            <a class="text-decoration-none" href="tel: 057-320-202-02-02">057-320-202-02-02</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope mx-2"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
+                            <a class="text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
                         </li>
                     </ul>
                 </div>
@@ -91,10 +261,10 @@
         </div>
     </footer>
     <!-- fin de pie-->
-    
+
+    <!-- archivos js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<<<<<<< HEAD
+
 </html>
-=======
-</html>
->>>>>>> 8fdddf63f9e7e0ff329751ab8e7d947103ed769e
