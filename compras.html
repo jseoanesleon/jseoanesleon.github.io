@@ -41,44 +41,74 @@
 
     <!-- inicio menu-->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="container d-flex justify-content-between align-items-center">
+
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
                 ProdArt
             </a>
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
-                id="opciones">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acercade.html">A cerca de </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="compras.html">Compras </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactenos.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" onclick="visitar();">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">A cerca de </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Compras </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                        data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span id="carrito-value"
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span id="contador"
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </nav>
     <!-- fin menu-->
-
     <!-- inicio de contenido -->
     <div class="container py-5">
         <div class="row">
 
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">Categorias</h1>
+               
                 <ul class="list-unstyled templatemo-accordion">
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
@@ -86,8 +116,18 @@
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Hombres</a></li>
-                            <li><a class="text-decoration-none" href="#">Mujeres</a></li>
+                            <li><a class="text-decoration-none" href="#">
+                                    <details>
+                                        <summary>Hombres</summary>
+                                        <!--<p>Nuestras colecciones están diseñadas para todos</p>-->
+                                    </details>
+                                </a></li>
+                            <li><a class="text-decoration-none" href="#">
+                                    <details>
+                                        <summary>Mujeres</summary>
+                                        <!--<p>Descubre los sombreros para mujer ideales para cada temporada del año.</p>-->
+                                    </details>
+                                </a></li>
                         </ul>
                     </li>
                     <li class="pb-3">
@@ -96,8 +136,14 @@
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Sombreros</a></li>
-                            <li><a class="text-decoration-none" href="#">Hamacas</a></li>
+                            <li><a class="text-decoration-none" href="#">
+                                    <details>
+                                        <summary>Ventas</summary>
+                                        <!--<p>Envíos Gratis en el día ✓ Compre Sombrero en cuotas sin interés! ✓ Conozca
+                                            nuestras increíbles ofertas y promociones en millones de ✓ productos.</p>-->
+                                    </details>
+                                </a></li>
+
                         </ul>
                     </li>
                     <li class="pb-3">
@@ -106,9 +152,13 @@
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bolsos</a></li>
-                            <li><a class="text-decoration-none" href="#">Platería</a></li>
-                            <li><a class="text-decoration-none" href="#">Decoración</a></li>
+                            <li><a class="text-decoration-none" href="#">
+                                    <details>
+                                        <summary>Productos</summary>
+                                        <!--<p>En ProdArt, la calidad en nuestros productos es una obligación.</p>-->
+                                    </details>
+                                </a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -116,229 +166,28 @@
 
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-inline shop-top-menu pb-3 pt-1">
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Todo</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Hombres</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Mujeres</a>
-                            </li>
-                        </ul>
-                    </div>
+                   
                     <div class="col-md-6 pb-4">
+                        
                         <div class="d-flex">
-                            <select class="form-control">
-                                <option>Presentar</option>
-                                <option>A a Z</option>
-                                <option>Item</option>
-                            </select>
+                            <div> <h3 class="h2 pb-4">Categorias:</h3></div>
+                            <div>
+                                <select id="filtro" class="form-control">
+                                    <option value="todas">Todas</option>
+                                    <option value="sombreros">Sombreros</option>
+                                    <option value="mochilas">Mochilas</option>
+                                    <option value="bolsos">Bolsos</option>
+                                    <option value="hamacas">Hamacas</option>
+                                    <option value="plateria">Platería</option>
+                                    <option value="juguetes">Juguetes</option>
+    
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <!-- productos en el carro -->
-                <script>
-                    //DOM
-                    document.addEventListener('DOMContentLoaded', () => {
-                        //Variables -base de datos
-                        const baseDeDatos = [
-                            {
-                                id: 1,
-                                nombre: 'Terreneitor: El Rey',
-                                precio: 156370,
-                                imagen: './assets/img/Terreneitor.jpg'
-                            },
-                            {
-                                id: 3,
-                                nombre: 'Mochilas Tejidas',
-                                precio: 270000,
-                                imagen: 'assets/img/mochila.jpg'
-                            },
-                            {
-                                id: 2,
-                                nombre: 'Mochilas wayuu',
-                                precio: 270,
-                                imagen: 'assets/img/mochila.jpg'
-                            },
-                            {
-                                id: 4,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            }
-                            ,
-                            {
-                                id: 5,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            }
-                            ,
-                            {
-                                id: 6,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            }
-                            ,
-                            {
-                                id: 7,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            }
-                            ,
-                            {
-                                id: 8,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            },
-                            {
-                                id: 9,
-                                nombre: 'Figuras de Mario y Luigi',
-                                precio: 800000,
-                                imagen: 'assets/img/marioluigi.jpg'
-                            }
-                            ,
-                            {
-                                id: 10,
-                                nombre: 'Mystery Box',
-                                precio: 550000,
-                                imagen: 'assets/img/Box.png'
-                            },
-                            {
-                                id: 11,
-                                nombre: '',
-                                precio: 0,
-                                imagen: ''
-                            }
-                        ];
-                        let carrito = [];
-                        const divisa = '$';
-                        const DOMitems = document.querySelector('#items');
-                        const DOMcarrito = document.querySelector('#carrito');
-                        const DOMtotal = document.querySelector('#total');
-                        const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-
-
-                        //seccion de funciones 
-                        /*
-                        Dibujamos todos los productos a partir de la base de datos
-                        */
-                        function renderizarProductos() {
-                            baseDeDatos.forEach((info) => {
-                                //estructura
-                                const miNodo = document.createElement('div');
-                                miNodo.classList.add('card', 'col-sm-4');
-                                //body
-                                const miNodoCardBody = document.createElement('div');
-                                miNodoCardBody.classList.add('card-body');
-                                //titulo
-                                const miNodoTitle = document.createElement('h6');
-                                miNodoTitle.classList.add('card-tilte');
-                                miNodoTitle.textContent = info.nombre;
-                                //imagen
-                                const miNodoImagen = document.createElement('img');
-                                miNodoImagen.classList.add('img-fluid');
-                                miNodoImagen.setAttribute('src', info.imagen);
-                                //precio
-                                const miNodoPrecio = document.createElement('p');
-                                miNodoPrecio.classList.add('card-text');
-                                miNodoPrecio.textContent = `${divisa}${info.precio}`;
-                                // Boton
-                                const miNodoBoton = document.createElement('button');
-                                miNodoBoton.classList.add('btn', 'btn-primary');
-                                miNodoBoton.textContent = 'Agregar';
-                                miNodoBoton.setAttribute('marcador', info.id);
-                                miNodoBoton.addEventListener('click', anadirProductoAlCarrito);
-
-                                //insertamos
-                                miNodoCardBody.appendChild(miNodoImagen);
-                                miNodoCardBody.appendChild(miNodoTitle);
-                                miNodoCardBody.appendChild(miNodoPrecio);
-                                miNodoCardBody.appendChild(miNodoBoton);
-                                miNodo.appendChild(miNodoCardBody);
-                                DOMitems.appendChild(miNodo);
-                            });
-                        }
-                        /**
-                   * Evento para añadir un producto al carrito de la compra
-                   */
-                        function anadirProductoAlCarrito(evento) {
-                            // Anyadimos el Nodo a nuestro carrito
-                            carrito.push(evento.target.getAttribute('marcador'))
-                            // Actualizamos el carrito
-                            renderizarCarrito();
-
-
-                            handleCarritoValue(carrito.length)
-
-                        }
-                        function handleCarritoValue(value) {
-                            const carritoContainer = document.getElementById("carrito-value");
-                            carritoContainer.textContent = `${value}`
-                        }
-
-                        //dibujar todos los productos guardados en el carrito
-                        function renderizarCarrito() {
-                            // Vaciamos todo el html
-                            DOMcarrito.textContent = '';
-                            // Quitamos los duplicados
-                            const carritoSinDuplicados = [...new Set(carrito)];
-                            // Generamos los Nodos a partir de carrito
-                            carritoSinDuplicados.forEach((item) => {
-                                // Obtenemos el item que necesitamos de la variable base de datos
-                                const miItem = baseDeDatos.filter((itemBaseDatos) => {
-                                    // ¿Coincide las id? Solo puede existir un caso
-                                    return itemBaseDatos.id === parseInt(item);
-                                });
-                                // Cuenta el número de veces que se repite el producto
-                                const numeroUnidadesItem = carrito.reduce((total, itemId) => {
-                                    // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
-                                    return itemId === item ? total += 1 : total;
-                                }, 0);
-                                // Creamos el nodo del item del carrito
-                                const miNodo = document.createElement('li');
-                                miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-                                miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
-                                // Boton de borrar
-                                const miBoton = document.createElement('button');
-                                miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-                                miBoton.textContent = 'X';
-                                miBoton.style.marginLeft = '1rem';
-                                miBoton.dataset.item = item;
-                                miBoton.addEventListener('click', borrarItemCarrito);
-                                // Mezclamos nodos
-                                miNodo.appendChild(miBoton);
-                                DOMcarrito.appendChild(miNodo);
-                            });
-
-                        }
-                        /**
-                      * Evento para borrar un elemento del carrito
-                      */
-                        function borrarItemCarrito(evento) {
-                            // Obtenemos el producto ID que hay en el boton pulsado
-                            const id = evento.target.dataset.item;
-                            // Borramos todos los productos
-                            carrito = carrito.filter((carritoId) => {
-                                return carritoId !== id;
-                            });
-                            // volvemos a renderizar
-                            renderizarCarrito();
-                            // Actualizamos el LocalStorage
-                            guardarCarritoEnLocalStorage();
-
-                            handleCarritoValue(carrito.length)
-                        }
-                        renderizarProductos();
-                        renderizarCarrito();
-                    });
-                </script>
                 <!-- fin de productos -->
                 <!-- carrito -->
                 <div class="container">
@@ -354,10 +203,32 @@
                             <!-- Precio total -->
                             <p class="text-right">Total: $ <span id="total"></span></p>
                             <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                            <button id="" class="btn btn-info">Pagar</button>
+                            <button class="btn btn-info">
+                                <a href="pago.html" target="target_blank">Pagar</a>
+                            </button>
+                          
+
                         </aside>
                     </div>
                 </div>
+                <!-- paginacion -->
+                <div class="row">
+                    <ul class="pagination pagination-lg justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                                href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                                href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                                href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -423,6 +294,13 @@
 
     <!-- archivos js-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/contadorvisitas.js"></script> <!--Se debe incorporar en todos los html -->
 
 </body>
 
